@@ -4,25 +4,50 @@ $primaryColor: #00afdb;
 $accentColor:#f7590d;
 $typeface:'Roboto', sans-serif;
 
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$line-height-headline: 1.2;
 
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+/////////////////////
 .App {
   text-align: center;
 }
 
+//// Nav ////
+.Nav{
+  display: inherit;
+
+
+}
+
 .logodark {
-  height: 40vmin;
-  pointer-events: none;
+  width:min-content;
 }
 
+.nav-link{
+  //display: inline-block;
+  margin-bottom:1.5rem;
+  font-weight: $font-weight-medium;
 
-.App-header {
-  background-color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  a, button{
+    margin-top: 2.5em;
+    margin-left: 2.5rem;
+
+  }
+  button{
+    border-radius: 2rem;
+    border-width: 2px;
+    border-color: $primaryColor;
+    background-color: white;
+    padding:0.5rem;
+
+  }
 }
+
+//// Button ////
 
