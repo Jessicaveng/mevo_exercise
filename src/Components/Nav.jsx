@@ -11,8 +11,8 @@ function Nav() {
           <a>Home Zone</a>
           <a>Business</a>
           <a>FAQS</a>
-          <button type="button"> Sign In </button>
-          <button type="button"> Join For Free</button>
+          <button type="button" className="sign-in-button"> Sign In </button>
+          <button type="button" className = "button-with-outline"> Join For Free</button>
           </div>
        
 

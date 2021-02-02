@@ -39,11 +39,19 @@ $font-weight-bold: 700;
     margin-left: 2.5rem;
 
   }
-  button{
-    border-radius: 2rem;
-    border-width: 2px;
-    border-color: $primaryColor;
+
+  .sign-in-button{
+    border-style: none;
     background-color: white;
+
+  }
+
+  .button-with-outline{
+    border-radius: 1.5rem;
+    border-width: 2px;
+    border-color: $accentColor;
+    background-color: $accentColor;
+    color: white;
     padding:0.5rem;
 
   }
