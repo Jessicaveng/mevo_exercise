@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+$primaryColor: #00afdb;
+$accentColor:#f7590d;
+$typeface:'Roboto', sans-serif;
+
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$line-height-headline: 1.2;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+/////////////////////
+.App {
+  text-align: center;
+}
+
+//// Nav ////
+.Nav{
+  display:flex;
+  margin-left: 20%;
+}
+
+.logodark {
+  width:10vw;
+  margin-right: 5rem;
+
+}
+
+.nav-link{
+  //1.5rem;
+  margin-top: 2rem;
+  //font-weight: $font-weight-medium;
+  a, button{
+ 
+    //margin-top: 2.5em;
+    margin-left: 2.5rem;
+    //font-weight: $font-weight-medium;
+
+  }
+
+  .sign-in-button{
+    border-style: none;
+    background-color: white;
+    outline-style: none;
+    border-style:solid, $accentColor, 1rem;
+  }
+
+  .button-with-outline{
+    outline-style: none;
+    border-radius: 1.5rem;
+    border-width: 3px;
+    border-style: none;
+    background-color: $accentColor;
+    color: white;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+///// MAP //////
+.Mapp{
+  height: 50vh;
+}
+
+
