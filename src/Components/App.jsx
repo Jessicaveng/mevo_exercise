@@ -1,16 +1,15 @@
 import React from 'react'
-
 import '../Scss/index.scss'
 import Nav from './Nav.jsx'
+import Mapp from './Map.jsx'
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
       <Nav/>
       <hr/>
+      <Mapp/>
     </div>
   )
 }

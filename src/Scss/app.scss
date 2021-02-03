@@ -20,42 +20,47 @@ $font-weight-bold: 700;
 
 //// Nav ////
 .Nav{
-  display: inherit;
-
-
+  display:flex;
+  margin-left: 20%;
 }
 
 .logodark {
-  width:min-content;
+  width:10vw;
+  margin-right: 5rem;
+
 }
 
 .nav-link{
-  //display: inline-block;
-  margin-bottom:1.5rem;
-  font-weight: $font-weight-medium;
-
+  //1.5rem;
+  margin-top: 2rem;
+  //font-weight: $font-weight-medium;
   a, button{
-    margin-top: 2.5em;
+ 
+    //margin-top: 2.5em;
     margin-left: 2.5rem;
+    //font-weight: $font-weight-medium;
 
   }
 
   .sign-in-button{
     border-style: none;
     background-color: white;
-
+    outline-style: none;
+    border-style:solid, $accentColor, 1rem;
   }
 
   .button-with-outline{
+    outline-style: none;
     border-radius: 1.5rem;
-    border-width: 2px;
-    border-color: $accentColor;
+    border-width: 3px;
+    border-style: none;
     background-color: $accentColor;
     color: white;
-    padding:0.5rem;
-
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
-//// Button ////
 

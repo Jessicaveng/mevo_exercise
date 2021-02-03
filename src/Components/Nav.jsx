@@ -1,3 +1,4 @@
+import React from 'react'
 import '../Scss/index.scss'
 import logodark  from '../logodark.svg'
 
