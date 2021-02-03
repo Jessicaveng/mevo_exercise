@@ -8,8 +8,10 @@ function App() {
   return (
     <div className="App">
       <Nav/>
-      <hr/>
-      <Mapp/>
+      {/* <hr/> */}
+      <div className="Mapp">     
+         <Mapp/>
+      </div>
     </div>
   )
 }
