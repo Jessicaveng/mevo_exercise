@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 import mapboxgl from 'mapbox-gl';
+import Vehicles from './Vehicles.jsx';
+//import {mevoVehicles} from '../Api/api'
 
-//mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 mapboxgl.accessToken = 'pk.eyJ1IjoiamVzc2ljYXZlbmciLCJhIjoiY2trb2phZng2MDFxdzJ3b2NzYjZzZjJlbyJ9.BznCJvuhX9h40RQLDv8Gkg';
 
 
@@ -15,7 +16,9 @@ class Mapp extends Component {
       zoom:12.5
     }
   }
+
   componentDidMount(){
+
     const map = new mapboxgl.Map({
       container: this.mapContainer,
       style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
@@ -26,14 +29,20 @@ class Mapp extends Component {
 
       map.on('load', function () {
         map.resize();
-    });
-  }
+      });
+
+   
+
+    }
   render(){
     return(
-      <div ref={el => this.mapContainer = el} style = {{width:'100vw', height:'100vh'}}> </div>
+      <div ref={el => this.mapContainer = el} 
+      style = {{width:'55%', height:'60vh', margin:'0 auto'}}> 
+
+     
+      </div>
     )
-  
   }
 }
 
-export default Mapp
+export default Mapp 

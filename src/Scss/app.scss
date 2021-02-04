@@ -21,7 +21,8 @@ $font-weight-bold: 700;
 //// Nav ////
 .Nav{
   display:flex;
-  margin-left: 20%;
+  //margin: 0, auto;
+   margin-left: 20%;
 }
 
 .logodark {
@@ -35,7 +36,6 @@ $font-weight-bold: 700;
   margin-top: 2rem;
   //font-weight: $font-weight-medium;
   a, button{
- 
     //margin-top: 2.5em;
     margin-left: 2.5rem;
     //font-weight: $font-weight-medium;
@@ -63,9 +63,8 @@ $font-weight-bold: 700;
   }
 }
 
-///// MAP //////
 .Mapp{
-  height: 50vh;
+  margin-top: 3rem;
 }
 
 
