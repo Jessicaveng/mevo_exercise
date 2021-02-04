@@ -8,11 +8,10 @@ function HomeZone() {
         Glad you asked! The Home Zone is the service area where you can start
         and end your mevo trips. The Home Zone boundaries are illustrated in the
         app with a heavy orange line.
-      </p>
-      <p>
         You can end your trip in any approved parking space within the Home
         Zone.
       </p>
+    
       <p>
         The Wellington Home Zone also includes parking at Wellington
         International Airport, allowing for one-way trips to and from the city.

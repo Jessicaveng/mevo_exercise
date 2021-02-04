@@ -26,19 +26,20 @@ $font-weight-bold: 700;
 }
 
 .logodark {
-  width:10vw;
+  width:15vw;
   margin-right: 5rem;
 
 }
 
 .nav-link{
   //1.5rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   //font-weight: $font-weight-medium;
   a, button{
     //margin-top: 2.5em;
     margin-left: 2.5rem;
     //font-weight: $font-weight-medium;
+    text-decoration: none;
 
   }
 
@@ -65,6 +66,19 @@ $font-weight-bold: 700;
 
 .Mapp{
   margin-top: 3rem;
+
+}
+
+.HomeZone{
+  margin: auto;
+  align-items: center;
+  padding-top: 2rem;
+
+  width:55% ;
+  p{
+    text-align: left;
+    font-weight: $font-weight-light;
+  }
 }
 
 

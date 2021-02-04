@@ -1,48 +1,48 @@
-import React, {Component} from 'react'
+
+import React, { useState, useRef } from "react";
 //import ReactDOM from 'react-dom';
-import mapboxgl from 'mapbox-gl';
-import Vehicles from './Vehicles.jsx';
+//import mapboxgl from "mapbox-gl";
+import ReactMapGL, {Marker}from 'react-map-gl'
+//import Vehicles from "./Vehicles.jsx";
 //import {mevoVehicles} from '../Api/api'
+import '../Scss/index.scss'
+import dotenv from 'dotenv'
+dotenv.config()
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiamVzc2ljYXZlbmciLCJhIjoiY2trb2phZng2MDFxdzJ3b2NzYjZzZjJlbyJ9.BznCJvuhX9h40RQLDv8Gkg';
+const MapboxAccessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN
+
+  //SET UP MAP  
+  export default function Map () {
+    const [viewport, setViewport]=useState({
+      longitude: 174.777969,
+      latitude: -41.276825,
+      zoom: 13
+    })
+
+    const mapRef = useRef();
 
 
-class Mapp extends Component {
-  constructor(props){
-    super(props)
-    this.state={
-      lng: 174.777969,
-      lat: -41.276825,
-      zoom:12.5
-    }
-  }
-
-  componentDidMount(){
-
-    const map = new mapboxgl.Map({
-      container: this.mapContainer,
-      style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-      center: [this.state.lng, this.state.lat],
-      //[-74.5, 40], // starting position [lng, lat]
-      zoom: this.state.zoom // starting zoom
-      })
-
-      map.on('load', function () {
-        map.resize();
-      });
-
-   
-
-    }
-  render(){
-    return(
-      <div ref={el => this.mapContainer = el} 
-      style = {{width:'55%', height:'60vh', margin:'0 auto'}}> 
-
-     
-      </div>
+    //FETCH MEVO VEHICLES API DATA
+    const mevoVehiclesApi = "https://api.mevo.co.nz/public/vehicles/all";
+    
+    return (
+      <ReactMapGL
+        {...viewport} 
+        width= '100vw'
+        height='50vh'
+        maxZoom={20}         
+        mapstyle= "mapbox://styles/mapbox/streets-v11"
+        mapboxApiAccessToken={MapboxAccessToken}
+        
+        onViewportChange={newViewport =>{ //UPDATE VIEWPORT WHEN USER DRAGS/ZOOMS IN/OUT
+          setViewport({...newViewport})
+        }}
+        ref={mapRef}
+      > 
+        {/* {marker} */}
+      </ReactMapGL>
     )
   }
-}
 
-export default Mapp 
+ 
+
