@@ -1,4 +1,5 @@
 import React from "react";
+import '../Scss/index.scss'
 
 function HomeZone() {
   return (
@@ -16,7 +17,7 @@ function HomeZone() {
         The Wellington Home Zone also includes parking at Wellington
         International Airport, allowing for one-way trips to and from the city.
       </p>
-      <button> WELLINGTON AIRPORT GUIDE </button>
+      <button type="button" className="button-with-outline"> WELLINGTON AIRPORT GUIDE </button>
       <p>
         You'll see the Home Zone grow over time to match where our customers
         live and work. Join now and help us grow, or chat with us if you have

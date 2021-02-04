@@ -97,7 +97,7 @@ export default function Map() {
               longitude={parseFloat(longitude)}
             >
               <button className="vehicle-marker">
-                <img src="vehiclemarker.png" alt="vehicle coordinates" />
+                <img src="vehiclemarker_dark_outline.png" alt="vehicle coordinates" />
               </button>
             </Marker>
           );
