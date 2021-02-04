@@ -6,14 +6,30 @@ const mevoVehiclesApi = "https://api.mevo.co.nz/public/vehicles/all";
 
 
 
-export function mevoHomeZone(){
+export function mevoHomeZone (){
   return request
   .get(mevoHomeZoneApi)
-  .then(res=>res.body)
+  .then(res=>res.body.json())
 }
+// // export const fetchHomeZoneAPI = () => {
+// //   return request
+// //     .get('/api/home-zones')
+// //     .then(res => res.body)
+// // }
+
 
 export function mevoVehicles(){
   return request
   .get(mevoVehiclesApi)
-  .then(res=>res.body)
+  .then(res=>res.body.json())
 }
+
+
+
+
+
+// // export const fetchVehiclesAPI = () => {
+// //   return request
+// //     .get('/api/vehicles')
+// //     .then(res => res.body)
+// // }
