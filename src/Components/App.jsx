@@ -15,7 +15,8 @@ function App() {
       <HomeZone/>
       <div className="Mapp">      
         <Mapp/>
-        <Vehicles/>
+        {/* <Vehicles/> */}
+        <div> </div>
       </div>
     </div>
   )
