@@ -2,21 +2,19 @@ import React, { useState, useRef } from "react";
 //import ReactDOM from 'react-dom';
 import mapboxgl from "mapbox-gl";
 import useSwr from "swr";
-import ReactMapGL, { Marker } from "react-map-gl";
+import ReactMapGL, { Marker  } from "react-map-gl";
 import useSupercluster from "use-supercluster";
-
 import "../Scss/index.scss";
 
 import dotenv from "dotenv";
 dotenv.config();
-
 
 const MapboxAccessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 const fetcher = (...args) => fetch(...args).then((response) => response.json()); //FETCH ARGS  THEN CONVERT RESPONSE TO JSON
 
 //SET UP MAP
 export default function Map() {
-  const [viewport, setViewport] = useState({
+  const [viewport, setViewport, mapstyle] = useState({
     //container:'root',
     //style: 'mapbox://styles/mapbox/streets-v11',
     longitude: 174.777969,
@@ -25,7 +23,6 @@ export default function Map() {
   });
   const mapRef = useRef();
 
-  
   //FETCH MEVO VEHICLES API DATA
   const mevoVehiclesApi = "https://api.mevo.co.nz/public/vehicles/all";
   const { data, error } = useSwr(mevoVehiclesApi, fetcher);
@@ -45,7 +42,7 @@ export default function Map() {
     : null;
 
   //GET CLUSTERS
-  const { clusters} = useSupercluster({
+  const { clusters } = useSupercluster({
     points,
     bounds, //4 cornes of lng and Lat
     zoom: viewport.zoom,
@@ -53,17 +50,16 @@ export default function Map() {
   });
 
   return (
-    <div >
+    <div>
       <ReactMapGL
         {...viewport}
         width="100vw"
         height="80vh"
         maxZoom={20}
         mapboxApiAccessToken={MapboxAccessToken}
-        mapstyle = "mapbox://styles/mapbox/streets-v11"
+        
+        onViewportChange={(newViewport) => {   //UPDATE VIEWPORT WHEN USER DRAGS/ZOOMS IN/OUT
 
-        onViewportChange={(newViewport) => {
-          //UPDATE VIEWPORT WHEN USER DRAGS/ZOOMS IN/OUT
           setViewport({ ...newViewport });
         }}
         ref={mapRef} // GIVE ACCESS TO THE MAP ITSELF
@@ -74,6 +70,7 @@ export default function Map() {
             cluster: isCluster,
             point_count: pointCount,
           } = cluster.properties;
+
           if (isCluster) {
             return (
               <Marker
@@ -84,8 +81,8 @@ export default function Map() {
                 <div
                   className="cluster-marker"
                   style={
-                    ({ width: `${10 + (pointCount / points.length) *20}px` },
-                    { height: `${10 + (pointCount / points.length) *20}px`})
+                    ({ width: `${10 + (pointCount / points.length) * 20}px` },
+                    { height: `${10 + (pointCount / points.length) * 20}px` })
                   }
                 >
                   {pointCount}
@@ -100,7 +97,10 @@ export default function Map() {
               longitude={parseFloat(longitude)}
             >
               <button className="vehicle-marker">
-                <img src="vehiclemarker_dark_outline.png" alt="vehicle coordinates" />
+                <img
+                  src="vehiclemarker_dark_outline.png"
+                  alt="vehicle coordinates"
+                />
               </button>
             </Marker>
           );

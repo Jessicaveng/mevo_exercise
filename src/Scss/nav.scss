@@ -1,18 +1,19 @@
 //// Nav ////
-.Nav { //STICKEY
+.Nav {
+  //STICKEY
   display: flex;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #fafafa;
-
+  //box-sizing: border-box;
+  //justify-content: space-between;
   box-shadow: 2px 2px #f0f0f0;
 
   .logodark {
     width: 15vw;
     margin-right: 5rem;
     margin-left: 20%;
-
   }
   .nav-link {
     margin-top: 3rem;
@@ -24,7 +25,6 @@
       //margin-top: 2.5em;
       margin-left: 2.5rem;
       text-decoration: none;
-      
     }
   }
 
@@ -33,13 +33,12 @@
     outline-style: none;
     border-width: thin;
     border-style: solid;
-    border-radius:  1.5rem;
+    border-radius: 1.5rem;
     border-color: black;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-
   }
 
   .button-with-outline {
@@ -53,6 +52,5 @@
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-
   }
 }

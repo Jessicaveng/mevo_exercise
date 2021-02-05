@@ -1,18 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
-
 /////////////////////
 .App {
   text-align: center;
 }
 
-hr{
-  margin-top:50px;
+hr {
+  margin-top: 50px;
 }
 
-.container{
+.container {
   margin-top: 7rem;
-
 }
 .Mapp {
   margin-top: 3rem;
@@ -26,13 +24,12 @@ hr{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5px;
-  height: 5px;
+  // width: 5px;
+  // height: 5px;
 }
 
 .vehicle-marker {
   background: none;
   border-style: none;
   outline-style: none;
-
 }
