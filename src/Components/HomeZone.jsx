@@ -3,7 +3,7 @@ import '../Scss/index.scss'
 
 function HomeZone() {
   return (
-    <div className="HomeZone">
+    <div className="content">
       <h1>What is the HOME ZONE?</h1>
       <p>
         Glad you asked! The Home Zone is the service area where you can start

@@ -1,16 +1,18 @@
-.HomeZone {
+.content {
   margin: auto;
-  //margin-top: 15rem;
-  margin-bottom: 11rem;
-  margin-top:5rem;
+  margin-bottom: 4rem;
+  margin-top: 11rem;
   align-items: center;
   padding-top: 5rem;
-
-  width: 55%;
+  background-color: #fafafa;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  width: 55vw;
 
   h1{
     margin-bottom: 3rem;
-    color: $primaryColor;
+    color:#333;
   }
   p {
     text-align: left;

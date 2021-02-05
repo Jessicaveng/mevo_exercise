@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "./Nav.jsx";
 import HomeZone from "./HomeZone.jsx";
 import Mapp from "./Map.jsx";
+import Foot from './Park.jsx';
 import "../Scss/index.scss";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <Nav />
       <HomeZone />
       <Mapp />
-      
+      <Foot/>
       </div>
     </div>
   );
