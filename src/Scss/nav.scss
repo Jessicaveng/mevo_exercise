@@ -1,0 +1,58 @@
+//// Nav ////
+.Nav { //STICKEY
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fafafa;
+
+  box-shadow: 2px 2px #f0f0f0;
+
+  .logodark {
+    width: 15vw;
+    margin-right: 5rem;
+    margin-left: 20%;
+
+  }
+  .nav-link {
+    margin-top: 3rem;
+    text-decoration: none;
+
+    //font-weight: $font-weight-medium;
+    a,
+    button {
+      //margin-top: 2.5em;
+      margin-left: 2.5rem;
+      text-decoration: none;
+      
+    }
+  }
+
+  .sign-in-button {
+    background-color: white;
+    outline-style: none;
+    border-width: thin;
+    border-style: solid;
+    border-radius:  1.5rem;
+    border-color: black;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+  }
+
+  .button-with-outline {
+    outline-style: none;
+    border-radius: 1.5rem;
+    border-width: 3px;
+    border-style: none;
+    background-color: $accentColor;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+  }
+}

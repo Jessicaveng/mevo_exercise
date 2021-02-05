@@ -20,7 +20,7 @@ function HomeZone() {
       <button type="button" className="button-with-outline"> WELLINGTON AIRPORT GUIDE </button>
       <p>
         You'll see the Home Zone grow over time to match where our customers
-        live and work. Join now and help us grow, or chat with us if you have
+        live and work. <br/> Join now and help us grow, or chat with us if you have
         any questions.
       </p>
     </div>
