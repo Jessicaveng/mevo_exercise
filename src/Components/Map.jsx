@@ -15,8 +15,7 @@ const fetcher = (...args) => fetch(...args).then((response) => response.json());
 //SET UP MAP
 export default function Map() {
   const [viewport, setViewport, mapstyle] = useState({
-    //container:'root',
-    //style: 'mapbox://styles/mapbox/streets-v11',
+ 
     longitude: 174.777969,
     latitude: -41.276825,
     zoom: 13,
@@ -55,6 +54,7 @@ export default function Map() {
         {...viewport}
         width="100vw"
         height="80vh"
+        mapStyle="mapbox://styles/mapbox/streets-v11"
         maxZoom={20}
         mapboxApiAccessToken={MapboxAccessToken}
         
