@@ -1,5 +1,6 @@
 {
-  "name": "mevo-staticsite",
+  "homepage" : "https://jessicaveng.github.io/mevo_exercise",
+  "name": "mevo_exercise",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
