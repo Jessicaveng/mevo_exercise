@@ -2,28 +2,23 @@
 
 /////////////////////
 .App {
-  text-align: center;
-}
-
-hr {
-  margin-top: 50px;
+  text-align: left;
 }
 
 .container {
-  margin-top: 7rem;
-}
-.Mapp {
   margin-top: 3rem;
 }
 
 .cluster-marker {
   color: #fff;
-  background: $primaryColor;
+  background: $accentColor;
   border-radius: 50%;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.5rem;
+  font-weight: $font-weight-light;
   // width: 5px;
   // height: 5px;
 }
