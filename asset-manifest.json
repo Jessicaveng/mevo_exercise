@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e5cdac5.chunk.css",
-    "main.js": "/static/js/main.c473d0ed.chunk.js",
-    "main.js.map": "/static/js/main.c473d0ed.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5486a7fa.js",
-    "runtime-main.js.map": "/static/js/runtime-main.5486a7fa.js.map",
-    "static/js/2.82430f52.chunk.js": "/static/js/2.82430f52.chunk.js",
-    "static/js/2.82430f52.chunk.js.map": "/static/js/2.82430f52.chunk.js.map",
-    "static/js/3.ae90bf87.chunk.js": "/static/js/3.ae90bf87.chunk.js",
-    "static/js/3.ae90bf87.chunk.js.map": "/static/js/3.ae90bf87.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.5e5cdac5.chunk.css.map": "/static/css/main.5e5cdac5.chunk.css.map",
-    "static/js/2.82430f52.chunk.js.LICENSE.txt": "/static/js/2.82430f52.chunk.js.LICENSE.txt",
-    "static/media/logo-brand.01fec535.svg": "/static/media/logo-brand.01fec535.svg",
-    "static/media/logodark.a6c24827.svg": "/static/media/logodark.a6c24827.svg"
+    "main.css": "/Jessicaveng/mevo_exercise.git/static/css/main.5e5cdac5.chunk.css",
+    "main.js": "/Jessicaveng/mevo_exercise.git/static/js/main.4ef8961f.chunk.js",
+    "main.js.map": "/Jessicaveng/mevo_exercise.git/static/js/main.4ef8961f.chunk.js.map",
+    "runtime-main.js": "/Jessicaveng/mevo_exercise.git/static/js/runtime-main.597fc125.js",
+    "runtime-main.js.map": "/Jessicaveng/mevo_exercise.git/static/js/runtime-main.597fc125.js.map",
+    "static/js/2.aa3c88fb.chunk.js": "/Jessicaveng/mevo_exercise.git/static/js/2.aa3c88fb.chunk.js",
+    "static/js/2.aa3c88fb.chunk.js.map": "/Jessicaveng/mevo_exercise.git/static/js/2.aa3c88fb.chunk.js.map",
+    "static/js/3.196f20c1.chunk.js": "/Jessicaveng/mevo_exercise.git/static/js/3.196f20c1.chunk.js",
+    "static/js/3.196f20c1.chunk.js.map": "/Jessicaveng/mevo_exercise.git/static/js/3.196f20c1.chunk.js.map",
+    "index.html": "/Jessicaveng/mevo_exercise.git/index.html",
+    "static/css/main.5e5cdac5.chunk.css.map": "/Jessicaveng/mevo_exercise.git/static/css/main.5e5cdac5.chunk.css.map",
+    "static/js/2.aa3c88fb.chunk.js.LICENSE.txt": "/Jessicaveng/mevo_exercise.git/static/js/2.aa3c88fb.chunk.js.LICENSE.txt",
+    "static/media/logo-brand.01fec535.svg": "/Jessicaveng/mevo_exercise.git/static/media/logo-brand.01fec535.svg",
+    "static/media/logodark.a6c24827.svg": "/Jessicaveng/mevo_exercise.git/static/media/logodark.a6c24827.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5486a7fa.js",
-    "static/js/2.82430f52.chunk.js",
+    "static/js/runtime-main.597fc125.js",
+    "static/js/2.aa3c88fb.chunk.js",
     "static/css/main.5e5cdac5.chunk.css",
-    "static/js/main.c473d0ed.chunk.js"
+    "static/js/main.4ef8961f.chunk.js"
   ]
 }
