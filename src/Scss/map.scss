@@ -5,17 +5,13 @@
   text-align: left;
 }
 
-hr {
-  margin-top: 25px;
-}
-
 .container {
   margin-top: 3rem;
 }
 
 .cluster-marker {
   color: #fff;
-  background:$accentColor;
+  background: $accentColor;
   border-radius: 50%;
   padding: 10px;
   display: flex;
