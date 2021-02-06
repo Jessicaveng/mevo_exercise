@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/mevo_exercise/static/css/main.5e5cdac5.chunk.css",
-    "main.js": "/mevo_exercise/static/js/main.4ef8961f.chunk.js",
-    "main.js.map": "/mevo_exercise/static/js/main.4ef8961f.chunk.js.map",
+    "main.css": "/mevo_exercise/static/css/main.013ca0bd.chunk.css",
+    "main.js": "/mevo_exercise/static/js/main.ffe25efb.chunk.js",
+    "main.js.map": "/mevo_exercise/static/js/main.ffe25efb.chunk.js.map",
     "runtime-main.js": "/mevo_exercise/static/js/runtime-main.c0493c06.js",
     "runtime-main.js.map": "/mevo_exercise/static/js/runtime-main.c0493c06.js.map",
     "static/js/2.edf57892.chunk.js": "/mevo_exercise/static/js/2.edf57892.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.196f20c1.chunk.js": "/mevo_exercise/static/js/3.196f20c1.chunk.js",
     "static/js/3.196f20c1.chunk.js.map": "/mevo_exercise/static/js/3.196f20c1.chunk.js.map",
     "index.html": "/mevo_exercise/index.html",
-    "static/css/main.5e5cdac5.chunk.css.map": "/mevo_exercise/static/css/main.5e5cdac5.chunk.css.map",
+    "static/css/main.013ca0bd.chunk.css.map": "/mevo_exercise/static/css/main.013ca0bd.chunk.css.map",
     "static/js/2.edf57892.chunk.js.LICENSE.txt": "/mevo_exercise/static/js/2.edf57892.chunk.js.LICENSE.txt",
     "static/media/logo-brand.01fec535.svg": "/mevo_exercise/static/media/logo-brand.01fec535.svg",
     "static/media/logodark.a6c24827.svg": "/mevo_exercise/static/media/logodark.a6c24827.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.c0493c06.js",
     "static/js/2.edf57892.chunk.js",
-    "static/css/main.5e5cdac5.chunk.css",
-    "static/js/main.4ef8961f.chunk.js"
+    "static/css/main.013ca0bd.chunk.css",
+    "static/js/main.ffe25efb.chunk.js"
   ]
 }
