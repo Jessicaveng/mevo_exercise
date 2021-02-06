@@ -9,7 +9,8 @@ import "../Scss/index.scss";
 import dotenv from "dotenv";
 dotenv.config();
 
-const MapboxAccessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
+//const MapboxAccessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
+const MapboxAccessToken = 'pk.eyJ1IjoiamVzc2ljYXZlbmciLCJhIjoiY2trb2phZng2MDFxdzJ3b2NzYjZzZjJlbyJ9.BznCJvuhX9h40RQLDv8Gkg';
 const fetcher = (...args) => fetch(...args).then((response) => response.json()); //FETCH ARGS  THEN CONVERT RESPONSE TO JSON
 
 //SET UP MAP
