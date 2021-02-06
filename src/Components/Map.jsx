@@ -5,7 +5,6 @@ import useSwr from "swr";
 import ReactMapGL, { Marker  } from "react-map-gl";
 import useSupercluster from "use-supercluster";
 import "../Scss/index.scss";
-
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -99,7 +98,8 @@ export default function Map() {
             >
               <button className="vehicle-marker">
                 <img
-                  src="vehiclemarker_dark_outline_03.png"
+                  // src="../../public/vehiclemarker_dark_outline_03.jpg"
+                  src={process.env.PUBLIC_URL + '/vehiclemarker_dark_outline_03.png'}
                   alt="vehicle coordinates"
                 />
               </button>
