@@ -1,4 +1,4 @@
-.content {
+.content-home-zone {
   margin: auto;
   margin-bottom: 4rem;
   margin-top: 11rem;
@@ -8,17 +8,8 @@
   padding-left: 3rem;
   padding-right: 3rem;
   padding-bottom: 3rem;
-  width: 55vw;
+  //width: 55vw;
 
-  h1{
-    margin-bottom: 3rem;
-    color:#333;
-  }
-  p {
-    text-align: left;
-    font-weight: $font-weight-light;
-    line-height: $line-height-base;
-  }
   button {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -34,4 +25,68 @@
     padding-right: 1rem;
     font-weight: $font-weight-medium;
   }
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+p {
+  text-align: left;
+  font-weight: $font-weight-light;
+  line-height: $line-height-base;
+}
+.content-park {
+  margin: auto;
+  margin-bottom: 4rem;
+  //margin-top: 4rem;
+  align-items: center;
+  padding-top: 5rem;
+  background-color: #fafafa;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
+}
+.content-container {
+  width: 55vw;
+  margin: auto;
+}
+
+//FOOTER
+h4,li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-section {
+  display: flex;
+  text-align: left;
+  margin: auto;
+  /* margin-left: 26rem; */
+  width: 100%;
+  background: $primaryColor;
+}
+
+.footer-block {
+  display: flex;
+  margin: auto;
+  width: 55vw;
+  margin-top:2rem;
+  margin-bottom:2rem;
+
+  ul {
+    padding-right: 10rem;
+  }
+}
+.footer-group {
+  display: flex;
+  //margin: auto;
+  div {
+    padding-right: 5rem;
+  }
+
+  
 }
